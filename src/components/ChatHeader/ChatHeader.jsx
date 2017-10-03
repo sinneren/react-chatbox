@@ -6,7 +6,7 @@ class ChatHeader extends Component {
         this._handleClick = this._handleClick.bind(this);
     }
     _handleClick() {
-        return false;
+        this.props.callbackClick(true);
     }
     render() {
         function chatMessageCounter(prop) {
@@ -18,7 +18,7 @@ class ChatHeader extends Component {
             <header className="clearfix">
                 <div className="chat-close" onClick={this._handleClick}>x</div>
                 <h4 className={this.props.status}>{this.props.name}</h4>
-                {console.log(this.props.messageCounter)}
+                {chatMessageCounter(this.props.messageCounter)}
             </header>
         )
     }
