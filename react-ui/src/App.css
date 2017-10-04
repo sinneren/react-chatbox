@@ -103,9 +103,16 @@ p { margin: 0; }
 	border-radius: 3px;
 	padding: 8px;
 	outline: none;
-	width: 234px;
+	width: 80%;
 }
-
+.live-chat .submit-btn {
+    width: 20%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    appearance: none;
+    cursor: pointer;
+}
 .chat-message-counter {
 	background: #e62727;
 	border: 1px solid #fff;
