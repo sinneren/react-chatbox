@@ -1,12 +1,15 @@
-# Node build artifacts
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
 node_modules
-npm-debug.log
 
-# Local development
-*.env
-*.dev
+# testing
+coverage
+
+# production
+build
+
+# misc
 .DS_Store
-
-# Docker
-Dockerfile
-docker-compose.yml
+.env
+npm-debug.log
